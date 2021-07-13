@@ -1,3 +1,4 @@
+/* <------- Global styling  --------> */
 :root {
     --clr-old-burgundy:#493631;
     --clr-rosewood:#5F0612;
@@ -14,6 +15,8 @@
 a { 
     cursor: pointer;
 }
+
+/* <------- Primary Navigation Bar --------> */
 
 header {
     display: flex;
@@ -43,12 +46,13 @@ header {
 .nav-menu a {
     color: black;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 .nav-menu a:hover {
-    color: var(--clr-linen);
+    color: var(--clr-rosewood);
     text-shadow: 0px 0px 4px var(--clr-rosewood);
+    transition: all 100ms ease-in;
 }
 
 .logo-left {
@@ -59,6 +63,9 @@ header {
     text-decoration: none;
     padding-left: 20px;
 }
+
+
+/* <-------  Hero section (home page)  --------> */
 
 
 .hero-section {
@@ -101,6 +108,8 @@ header {
     color: var(--clr-rosewood);
 }
 
+/* <-------  Card section (home page)  --------> */
+
 .home-card-container {
     background-color: var(--clr-pastel-pink);
     margin: auto;
@@ -131,6 +140,9 @@ header {
     margin: 20px;
     box-shadow: 4px 4px 10px var(--clr-rosewood);
 }
+
+
+/* <-------  Foooter  --------> */
 
 footer {
     width: 100%;
@@ -203,7 +215,7 @@ footer {
     padding: 5px 0px;
 }
 
-
+/* <-------  Media Queries  --------> */
 
 @media only screen and (max-width: 1200px) {    
     .hero-bottom-text {
@@ -228,6 +240,10 @@ footer {
     .home-card {
         padding: 40px;
         font-size: 20px;
+    }
+
+    .hero-section {
+        height: 75vh;
     }
 
 }
